@@ -1,4 +1,4 @@
-package com.acc.entity;
+package com.acc4j.po;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
