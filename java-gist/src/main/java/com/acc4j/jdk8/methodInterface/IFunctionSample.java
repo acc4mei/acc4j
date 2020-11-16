@@ -1,7 +1,7 @@
-package com.acc4j.methodInterface;
+package com.acc4j.jdk8.methodInterface;
 
 /**
- * 函数式接口：标注了@FunctionalInterface，有且仅有一个抽象方法的接口
+ * 函数式接口：标注了@FunctionalInterface，有且仅有一个抽象方法的接口。
  */
 @FunctionalInterface
 public interface IFunctionSample<A, B> {

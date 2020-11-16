@@ -1,4 +1,4 @@
-package com.acc4j.methodInterface;
+package com.acc4j.jdk8.methodInterface;
 
 import org.junit.Test;
 
