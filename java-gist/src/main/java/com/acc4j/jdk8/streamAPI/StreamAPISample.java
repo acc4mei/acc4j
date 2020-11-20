@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * StreamAPI：高效的可迭代容器数据处理流式API，支持并发流。
- * Stream是数据流从开始，数据操作，到结束的完整流程，不能反复使用。
- * 多个Stream能连接成一个”大的“Stream，数据流像使用管道一样"拼接"进行一系列的数据操作。
- * Stream不会改变源容器的数据，保障了源数据安全。
+ * StreamAPI：高效的可迭代容器数据处理流式API，支持并发流
+ * Stream是数据流从开始，数据操作，到结束的完整流程，不能反复使用
+ * 多个Stream能连接成一个”大的“Stream，数据流像使用管道一样"拼接"进行一系列的数据操作
+ * Stream不会改变源容器的数据，保障了源数据安全
  */
 public class StreamAPISample {
 

@@ -5,17 +5,17 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * Lambda表达式：以匿名函数的形式“实现”函数式接口。
- * Lambda简化了匿名内部类形式，但实现原理并不同；匿名内部类在编译过程种会产生类；Lambda则是调用JVM的 invokedynamic 指令实现，不会产生类。
+ * Lambda表达式：以匿名函数的形式“实现”函数式接口
+ * Lambda简化了匿名内部类形式，但实现原理并不同；匿名内部类在编译过程种会产生类；Lambda则是调用JVM的 invokedynamic 指令实现，不会产生类
  */
 public class LambdaExpressionSample {
 
     /**
      * Lambda结构：(参数列表) -> {方法体}
      * 语法：
-     * 1. 参数列表的的小括号不能省略。
-     * 2. 方法体只有一行时可省略花括号；一行为返回值时可省略return；没有内容或者多行内容时花括号不能省略。
-     * 3. 支持函数式接口调用对应方法实现。
+     * 1. 参数列表的的小括号不能省略
+     * 2. 方法体只有一行时可省略花括号；一行为返回值时可省略return；没有内容或者多行内容时花括号不能省略
+     * 3. 支持函数式接口调用对应方法实现
      */
     public void sample() throws Exception {
         System.out.println("--------------- LambdaExpression sample --------------");

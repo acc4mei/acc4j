@@ -8,15 +8,15 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * 方法引用：以具名函数的形式“实现”函数式接口。
- * 可以访问到的方法（包括构造方法）都能化作方法引用，从而作为函数式接口使用。
+ * 方法引用：以具名函数的形式“实现”函数式接口
+ * 可以访问到的方法（包括构造方法）都能化作方法引用，从而作为函数式接口使用
  */
 public class MethodReferenceSample {
 
     /**
      * 方法引用结构：类，接口，对象::方法名
-     * 1. 方法引用的参数是隐含的，与对应的函数式接口匹配。
-     * 2. 支持函数式接口调用对应方法实现。
+     * 1. 方法引用的参数是隐含的，与对应的函数式接口匹配
+     * 2. 支持函数式接口调用对应方法实现
      */
     public void sample() throws Exception {
         System.out.println("--------------- MethodReference sample --------------");
