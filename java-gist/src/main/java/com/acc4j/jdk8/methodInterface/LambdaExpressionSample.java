@@ -13,7 +13,7 @@ public class LambdaExpressionSample {
     /**
      * Lambda结构：(参数列表) -> {方法体}
      * 语法：
-     * 1. 参数列表的的小括号不能省略
+     * 1. 参数类型可省略，通常可以从上下文信息推断，只有一个参数时可省略小括号；当显式声明类型时，小括号不能省略
      * 2. 方法体只有一行时可省略花括号；一行为返回值时可省略return；没有内容或者多行内容时花括号不能省略
      * 3. 支持函数式接口调用对应方法实现
      */
@@ -26,8 +26,10 @@ public class LambdaExpressionSample {
         Runnable l1 = () -> System.out.println("无参数，无返回值");
         // 可以省略return
         Callable<String> l2 = () -> "无参数，有返回值";
+        // 显式声明了类型，只有一个参数也不能省略小括号
         Consumer<String> l3 = (String a) -> System.out.println("有参数，无返回值");
-        Function<String, String> l4 = (String a) -> "有参数，有返回值";
+        // 参数不声明类型，通过上下文信息推断，只有一个参数时可以省略小括号
+        Function<String, String> l4 = a -> "有参数，有返回值";
         // 自定义函数式接口，多个参数，无返回值；用lambda来达成实现并调用
         IFunctionSample<String, String> l5 = (String a, String b) -> System.out.println("自定义函数式接口，多个参数，无返回值");
 
