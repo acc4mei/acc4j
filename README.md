@@ -17,3 +17,7 @@
 - Fel
 
   轻量级表达式计算引擎，兼容Java语法。
+  
+- EasyExcel
+
+  基于Java的简单、节约内存的Excel读写工具。
